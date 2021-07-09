@@ -8,7 +8,7 @@
 import Foundation
 
 struct Card {
-    var open : Bool
+    var open : Bool?
     let number : Int
 }
 
@@ -17,6 +17,8 @@ class MemoryGame: ObservableObject {
         static let cols = 3
         static let rows = 6
     }
+    var openIndex : Int?
+    
     @Published var cards: [Card] = []
     
     init() {
@@ -26,7 +28,7 @@ class MemoryGame: ObservableObject {
         cards = []
         let max_num = dimen.cols * dimen.rows / 2
         for n in 1 ... max_num{
-            cards.append(Card(open: true, number: n))
+            cards.append(Card(open: false, number: n))
             cards.append(Card(open: false, number: n))
         }
     }
@@ -35,6 +37,26 @@ class MemoryGame: ObservableObject {
     }
     func toggle(row: Int, col: Int) {
         let index = row * dimen.cols + col
-        cards[index].open.toggle()
+        let card = cards[index]
+        if card.open == nil || card.open! { return }
+        
+        cards[index].open!.toggle()
+        guard let oidx = openIndex else {
+            openIndex = index
+            return
+        }
+        let openCard = cards[oidx]
+        if openCard.number != card.number{
+            cards[oidx].open = false
+            openIndex = index
+            return
+        }
+        
+        remove(at: index)
+        remove(at: openIndex!)
+        openIndex = nil
+    }
+    func remove(at index: Int){
+        cards[index].open = nil
     }
 }
