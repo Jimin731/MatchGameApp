@@ -18,6 +18,7 @@
 		368AF3ED2697E015006CE2E0 /* MemoryGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AF3EC2697E015006CE2E0 /* MemoryGame.swift */; };
 		368AF3EF2697E282006CE2E0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AF3EE2697E282006CE2E0 /* CardView.swift */; };
 		368AF3F12697E4B1006CE2E0 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AF3F02697E4B1006CE2E0 /* GridStack.swift */; };
+		36C0589F26980F4100F6291C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0589E26980F4100F6291C /* MainMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		368AF3EC2697E015006CE2E0 /* MemoryGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryGame.swift; sourceTree = "<group>"; };
 		368AF3EE2697E282006CE2E0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		368AF3F02697E4B1006CE2E0 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
+		36C0589E26980F4100F6291C /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				368AF3C02697DED8006CE2E0 /* ContentView.swift */,
 				368AF3F02697E4B1006CE2E0 /* GridStack.swift */,
 				368AF3EE2697E282006CE2E0 /* CardView.swift */,
+				36C0589E26980F4100F6291C /* MainMenuView.swift */,
 			);
 			path = MatchGameApp;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				368AF3BD2697DED8006CE2E0 /* AppDelegate.swift in Sources */,
+				36C0589F26980F4100F6291C /* MainMenuView.swift in Sources */,
 				368AF3BF2697DED8006CE2E0 /* SceneDelegate.swift in Sources */,
 				368AF3F12697E4B1006CE2E0 /* GridStack.swift in Sources */,
 				368AF3ED2697E015006CE2E0 /* MemoryGame.swift in Sources */,
