@@ -1,0 +1,28 @@
+//
+//  ContentView.swift
+//  MatchGameApp
+//
+//  Created by 박지영 and 윤지민 on 2021/07/09.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    @ObservedObject var game = MemoryGame()
+    var body: some View {
+        GridStack(rows: MemoryGame.dimen.rows, columns: MemoryGame.dimen.cols) { row, col in
+            CardView(card: game.card(row: row, col: col))
+                .gesture(TapGesture()
+                            .onEnded{ _ in
+                                game.toggle(row:row, col:col)
+                            }
+                )
+        }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
