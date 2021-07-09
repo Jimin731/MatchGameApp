@@ -10,27 +10,21 @@ import SwiftUI
 struct MainMenuView: View {
     let resourcePrefixes = [ "f", "t" ]
     var body: some View {
-        NavigationView{
-            VStack{
+        NavigationView {
+            VStack {
 //                Text("Memory Game")
 //                    .font(.largeTitle)
 //                    .fontWeight(.heavy)
 //                    .padding()
-                ScrollView(.vertical, showsIndicators: false){
-                    VStack(spacing:10){
-                        ForEach (resourcePrefixes, id:\.self){ prefix in
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 10) {
+                        ForEach (resourcePrefixes, id: \.self) { prefix in
                             MenuItemView(prefix: prefix)
                         }
                     }
-                    //                    Text("Hello")
-                    //                        .frame(height: 400)
-                    //                        .background(Color.yellow)
-                    //                    Text("World")
-                    //                        .frame(height: 400)
-                    //                        .background(Color.purple)
                 }
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .frame(maxWidth:.infinity, maxHeight: .infinity)
             .background(
                 LinearGradient(
                     gradient: Gradient(colors: [.white, .orange.opacity(0.5)]),
@@ -43,22 +37,23 @@ struct MainMenuView: View {
 }
 
 struct MenuItemView: View {
-    let prefix : String
-    var body :some View{
+    let prefix: String
+    var body: some View {
         HStack {
             Image("\(prefix)_back")
                 .resizable()
-                .frame(width: UIScreen.main.bounds.width * 0.4, height: UIScreen.main.bounds.width * 0.4)
+                .frame(width: UIScreen.main.bounds.width * 0.4,
+                       height: UIScreen.main.bounds.width * 0.4)
                 .padding(.leading)
             Spacer()
             NavigationLink(
-                destination: Text("prefix:\(prefix)"),
+                destination: ContentView(prefix: prefix),
                 label: {
                     Text("Play Game")
                         .padding()
                         .background(
                             Capsule()
-                                .stroke(lineWidth:4.0)
+                                .stroke(lineWidth: 4.0)
                         )
                 })
             Spacer()

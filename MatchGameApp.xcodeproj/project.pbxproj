@@ -19,6 +19,7 @@
 		368AF3EF2697E282006CE2E0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AF3EE2697E282006CE2E0 /* CardView.swift */; };
 		368AF3F12697E4B1006CE2E0 /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368AF3F02697E4B1006CE2E0 /* GridStack.swift */; };
 		36C0589F26980F4100F6291C /* MainMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C0589E26980F4100F6291C /* MainMenuView.swift */; };
+		36C058A1269821D100F6291C /* ImageAssetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36C058A0269821D100F6291C /* ImageAssetHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		368AF3EE2697E282006CE2E0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		368AF3F02697E4B1006CE2E0 /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 		36C0589E26980F4100F6291C /* MainMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuView.swift; sourceTree = "<group>"; };
+		36C058A0269821D100F6291C /* ImageAssetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAssetHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				368AF3F02697E4B1006CE2E0 /* GridStack.swift */,
 				368AF3EE2697E282006CE2E0 /* CardView.swift */,
 				36C0589E26980F4100F6291C /* MainMenuView.swift */,
+				36C058A0269821D100F6291C /* ImageAssetHelper.swift */,
 			);
 			path = MatchGameApp;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				36C0589F26980F4100F6291C /* MainMenuView.swift in Sources */,
 				368AF3BF2697DED8006CE2E0 /* SceneDelegate.swift in Sources */,
 				368AF3F12697E4B1006CE2E0 /* GridStack.swift in Sources */,
+				36C058A1269821D100F6291C /* ImageAssetHelper.swift in Sources */,
 				368AF3ED2697E015006CE2E0 /* MemoryGame.swift in Sources */,
 				368AF3C12697DED8006CE2E0 /* ContentView.swift in Sources */,
 				368AF3EF2697E282006CE2E0 /* CardView.swift in Sources */,
